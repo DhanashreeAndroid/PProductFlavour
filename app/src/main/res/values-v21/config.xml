@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="isShowDistributor">true</bool>
+    <bool name="isShowCity">true</bool>
+    <bool name="isTourPlanDateLimitApplied">true</bool>
+    <integer name="tourPlan_allowed_upTo">5</integer>
+
+</resources>

@@ -1,0 +1,45 @@
+<resources>
+    <string name="application_name">SalesCube\nMaharashtra Tea</string>
+    <string name="app_name_title">SalesCube </string>
+    <string name="company_name">Pitambari</string>
+    <string name="order_agentPrompt">Select City:</string>
+
+    <string name="acra_title">Information</string>
+    <string name="acra_toast_text">Sorry, the application crashed. A report will be sent to the developers.</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="no_connection">Your internet connection is not working, please check and try again.</string>
+    <string name="connection_timeout">Connection timeout! Server may be busy or unreachable, please try again.</string>
+    <string name="unknown_error">Oops! something went wrong, please try again.</string>
+    <!--<string name="shop_product_grand_total"><![CDATA[Grand <br />Total :]]></string>-->
+    <string name="shop_product_grand_total">Grand\nTotal :</string>
+    <string name="so_month_report">Select Period :</string>
+
+    <string name="jan" translatable="false">Jan</string>
+    <string name="feb" translatable="false">Feb</string>
+    <string name="mar" translatable="false">Mar</string>
+    <string name="apr" translatable="false">Apr</string>
+    <string name="may" translatable="false">May</string>
+    <string name="jun" translatable="false">Jun</string>
+    <string name="jul" translatable="false">Jul</string>
+    <string name="aug" translatable="false">Aug</string>
+    <string name="sep" translatable="false">Sept</string>
+    <string name="oct" translatable="false">Oct</string>
+    <string name="nov" translatable="false">Nov</string>
+    <string name="dec" translatable="false">Dec</string>
+    <string name="previous"><![CDATA[<]]></string>
+    <string name="next"><![CDATA[>]]></string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+
+    <string name="dialog_default_title">Here\'s a message!</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="LOADING">Loading...</string>
+
+    <string name="default_notification_channel_id" translatable="false">com.pitambaridigitalcare.b2c.notifier</string>
+
+
+</resources>

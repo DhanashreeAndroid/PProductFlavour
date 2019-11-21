@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@android:color/white"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/dlg_no_order_lbl_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Extra Information : "
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/no_order_spn_reason" />
+
+    <TextView
+        android:text="Reason:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:id="@+id/no_order_lbl_reason"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/no_order_lbl_reason"
+        android:layout_alignParentStart="true"
+        android:id="@+id/no_order_spn_reason"
+        style="@android:style/Widget.Holo.Light.Spinner"/>
+
+    <requestFocus
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:layout_alignParentStart="true"
+        android:id="@+id/no_order_txt_msg"
+        android:layout_below="@+id/dlg_no_order_lbl_msg"
+        android:layout_height="wrap_content"
+        android:fadeScrollbars="false"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/no_order_txt_msg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp">
+
+        <Button
+            android:text="Submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/no_order_btn_submit"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="Cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/no_order_btn_cancel"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</RelativeLayout>

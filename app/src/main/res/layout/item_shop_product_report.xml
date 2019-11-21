@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/item_ll_shop_prod_card">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/item_ll_shop_prod_order"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TableLayout
+                android:id="@+id/item_tbl_prod_order_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            </TableLayout>
+            <LinearLayout
+                android:id="@+id/item_ll_prod_order_total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/table_row_header"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.2"
+                    android:text="Total :"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorGray"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/table_row_bg"/>
+
+                <TextView
+                    android:id="@+id/item_shop_prod_total_qty"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:textSize="16dp"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="8dp"
+                    android:background="@drawable/table_cell_bg"/>
+                <TextView
+                    android:id="@+id/item_shop_prod_total_disc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:textSize="16sp"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="8dp"
+                    android:background="@drawable/table_cell_bg"/>
+                <TextView
+                    android:id="@+id/item_shop_prod_total_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:textSize="16sp"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="8dp"
+                    android:background="@drawable/table_cell_bg"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

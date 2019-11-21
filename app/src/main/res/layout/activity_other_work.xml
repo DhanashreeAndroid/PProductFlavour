@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_other_work"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@android:color/white"
+    tools:context="com.salescube.healthcare.demo.OtherWorkActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <!--<TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/border_gray"
+            android:padding="5dp"
+            android:text="Other Work"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/heading_text_color"
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />-->
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:padding="5dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:text="Date:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/textView14"
+                    android:layout_weight="0"
+                    style="@style/MyLabel"
+                    android:background="@drawable/border_label" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/other_work_spn_date"
+                    android:layout_weight="1"
+                    android:spinnerMode="dialog"
+                    style="@android:style/Widget.Holo.Light.Spinner"
+                    android:background="@drawable/spinner_simple" />
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:text="Work:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView24"
+                    style="@style/MyLabel"
+                    android:background="@drawable/border_label" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/other_work_spn_work"
+                    android:layout_weight="1"
+                    style="@android:style/Widget.Holo.Light.Spinner"
+                    android:background="@drawable/spinner_simple" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tr_spn_agent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    style="@style/MyLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_label"
+                    android:text="Agent:" />
+
+                <Spinner
+                    android:id="@+id/other_work_spn_agent"
+                    style="@android:style/Widget.Holo.Light.Spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/spinner_simple" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:text="Description:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView22"
+                    android:freezesText="false"
+                    style="@style/MyLabel"
+                    android:background="@drawable/border_label" />
+
+                <EditText
+                    android:id="@+id/other_work_edit_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_text_box_gray"
+                    android:ems="10"
+                    android:inputType="textMultiLine|textShortMessage"
+                    android:selectAllOnFocus="false"
+                    android:singleLine="false" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:text="Submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/other_work_btn_sumbit"
+                android:layout_weight="1"
+                android:background="@drawable/button_simple" />
+
+            <Button
+                android:text="Cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/other_work_btn_cancel"
+                android:layout_weight="1"
+                android:background="@drawable/button_simple" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/other_work_btn_report"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_simple"
+            android:text="Other Work Report" />
+    </LinearLayout>
+
+</RelativeLayout>

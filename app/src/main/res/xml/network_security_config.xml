@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">app.pitambari.com</domain>
+        <domain includeSubdomains="true">192.168.2.37</domain>
+        <domain includeSubdomains="true">122.179.137.116</domain>
+        <domain includeSubdomains="true">localhost</domain>
+        <domain includeSubdomains="true">pitambari.com</domain>
+
+    </domain-config>
+</network-security-config>

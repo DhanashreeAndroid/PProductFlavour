@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context="com.salescube.healthcare.demo.HoReportActivity">
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView12"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:background="@drawable/border_gray"-->
+        <!--android:padding="5dp"-->
+        <!--android:text="HO Report"-->
+        <!--android:textAlignment="center"-->
+        <!--android:textAllCaps="true"-->
+        <!--android:textColor="@color/heading_text_color"-->
+        <!--android:textSize="18sp"-->
+        <!--android:textStyle="normal|bold" />-->
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/ho_report_lbl_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_success"
+            android:text="Done"
+            android:textAlignment="center"
+            android:textAppearance="@style/ActivityHeader"
+            android:textColor="@android:color/background_light" />
+
+    </TableRow>
+
+    <TableLayout
+        android:id="@+id/ho_report_tbl_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"></TableLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <TableLayout
+            android:id="@+id/ho_report_tbl_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"></TableLayout>
+    </ScrollView>
+
+</LinearLayout>

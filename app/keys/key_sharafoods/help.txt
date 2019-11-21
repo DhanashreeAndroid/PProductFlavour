@@ -1,0 +1,11 @@
+Key Store Path: D:\Projects\shara-foods-live\android\key\SharaKeystore.jks
+key store pass : skG4z9FBV2eCP83M (add space to last )
+alias: key0 
+key pass====  aL5KzuH2szXN4hX9 (add space to last )
+
+First and Last Name : Pitambari DigitalCare
+Organizational Unit : Pitambari DigitalCare
+Organization 	    : Pitambari Products Pvt Ltd.
+City or Locality    : Thane
+State or Province   : Maharashtra
+COnutry Code(XX)    : IN

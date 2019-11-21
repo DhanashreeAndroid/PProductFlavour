@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.salescube.healthcare.demo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:name="com.salescube.healthcare.demo.app.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logo_3"
+        android:label="@string/application_name"
+        android:roundIcon="@mipmap/ic_logo_3"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:label"
+        android:networkSecurityConfig="@xml/network_security_config">
+
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activity.LatestAttendanceActivity"></activity>
+        <activity android:name=".NotificationActivity" />
+
+        <provider
+            android:name=".sysctrl.GenericFileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+
+        </provider>
+
+        <service
+            android:name=".service.DataJobIntentService"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name="com.salescube.healthcare.demo.service.LocationJobIntentService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false"/>
+
+        <service android:name=".service.MessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".service.FcmFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+
+
+
+        <activity
+            android:name=".TourPlanActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"></activity>
+
+        <activity android:name="com.salescube.healthcare.demo.TableStatisticActivity" />
+        <activity
+            android:name="com.salescube.healthcare.demo.SalesOrderEntryActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/title_full_screen"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.salescube.healthcare.demo.StockEntryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.salescube.healthcare.demo.SalesOrderActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.salescube.healthcare.demo.SalesOrderViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.salescube.healthcare.demo.POPActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.salescube.healthcare.demo.OtherWorkActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.salescube.healthcare.demo.LeaveActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.salescube.healthcare.demo.CompititorActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.salescube.healthcare.demo.ShopAddActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/> <!-- reports activity -->
+        <activity android:name="com.salescube.healthcare.demo.TodaysSummaryReport" />
+        <activity android:name="com.salescube.healthcare.demo.TodaysOrderActivity" />
+        <activity android:name="com.salescube.healthcare.demo.AdminToolsActivity" /> <!-- Google API Key -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAJBF1anjGRH7nsu16VILgguenXw5iOOeM" /> <!-- Services -->
+
+        <receiver
+            android:name="com.salescube.healthcare.demo.BroadcastReceiver.ConnectivityChange"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.salescube.healthcare.demo.GpsSwitchReceiver"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":gpsReceiver">
+            <intent-filter>
+                <action android:name="android.location.PROVIDERS_CHANGED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.salescube.healthcare.demo.DeviceShutdownReceiver"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":offReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_SHUTDOWN" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.salescube.healthcare.demo.BootStartReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name="com.salescube.healthcare.demo.HoReportActivity" />
+        <activity android:name="com.salescube.healthcare.demo.UtilityActivity" />
+        <activity android:name="com.salescube.healthcare.demo.TableViewActivity" />
+        <activity
+            android:name="com.salescube.healthcare.demo.OtherWorkReportActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.salescube.healthcare.demo.LeaveReportActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.salescube.healthcare.demo.CompititorReportActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name="com.salescube.healthcare.demo.MyPlaceActivity" />
+        <activity android:name="com.salescube.healthcare.demo.ComplaintActivity" />
+        <activity
+            android:name="com.salescube.healthcare.demo.SoAnalyticReportActivity"
+            android:noHistory="true" />
+        <activity
+            android:name="com.salescube.healthcare.demo.ProductTargetActivity"
+            android:excludeFromRecents="true"
+            android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar" />
+        <activity
+            android:name="com.salescube.healthcare.demo.SalesReturnActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.salescube.healthcare.demo.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.salescube.healthcare.demo.NewMainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.salescube.healthcare.demo.AttendanceActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/title_full_screen" />
+        <activity
+            android:name="com.salescube.healthcare.demo.AttendanceActivity2"
+            android:screenOrientation="landscape"
+            android:theme="@style/title_full_screen" /> <!-- <activity android:name=".DailyWorkActivity" /> -->
+        <activity
+            android:name="com.salescube.healthcare.demo.SoMonthReportActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/title_full_screen" />
+        <activity
+            android:name="com.salescube.healthcare.demo.SoDayReportActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/title_full_screen" />
+        <activity
+            android:name="com.salescube.healthcare.demo.SoMonthAttendenceReportActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.salescube.healthcare.demo.ShopWiseOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.salescube.healthcare.demo.ProductWiseOrderActivity"
+            android:screenOrientation="portrait">
+
+            <!--
+                 <intent-filter>
+                   <action android:name="android.intent.action.MAIN" />
+
+                   <category android:name="android.intent.category.LAUNCHER" />
+               </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name="com.salescube.healthcare.demo.DayWiseAchievementActivity"
+            android:screenOrientation="portrait">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name="com.salescube.healthcare.demo.MySalesReportActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.salescube.healthcare.demo.SOProductWiseAchievement"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.salescube.healthcare.demo.TodayShopWiseAchievementActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.salescube.healthcare.demo.TodayProductWiseAchievementActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.salescube.healthcare.demo.TodayShopProductWiseReportActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.salescube.healthcare.demo.TodayAgentProductWiseReportActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.salescube.healthcare.demo.MonthShopWiseAchievementActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.salescube.healthcare.demo.MonthProductWiseAchievementActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.salescube.healthcare.demo.AttendenceReportActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.salescube.healthcare.demo.SoMonthPerformanceReportActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/title_full_screen" />
+        <activity
+            android:name="com.salescube.healthcare.demo.SoMonthProductReportActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.salescube.healthcare.demo.MonthDayWiseReportActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/title_full_screen"/>
+        <activity
+            android:name="com.salescube.healthcare.demo.SOOtherWorkReportActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/title_full_screen">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+
+        <meta-data        android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id"/>
+
+    </application>
+
+</manifest>

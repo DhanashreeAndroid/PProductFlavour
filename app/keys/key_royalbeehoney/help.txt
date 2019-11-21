@@ -1,0 +1,11 @@
+Key Store Path: D:\Projects\royal-bee-honey\salescube healthcare\android\key\key0606.jsk
+key store pass : Yb8MJ6LGbJ7ptc7b
+alias: key0
+key pass====  WMSp4nqEH39m9sWz
+
+First and Last Name : Pitambari DigitalCare
+Organizational Unit : Pitambari DigitalCare
+Organization 	    : Pitambari Products Pvt Ltd.
+City or Locality    : Thane
+State or Province   : Maharashtra
+COnutry Code(XX)    : IN

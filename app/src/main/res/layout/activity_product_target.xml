@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context=".ProductTargetActivity">
+
+    <TextView
+        android:id="@+id/header_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Shop Target"
+        android:textAlignment="center"
+        android:textAppearance="@style/ActivityHeader"
+        android:textColor="@color/colorRed" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/table_row_header"
+        android:padding="1dp">
+
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/table_cell_bg"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Product Name"
+            android:textAppearance="@style/MyLabel"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/target_qty"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:background="@drawable/table_cell_bg"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Target\nQty"
+            android:textAlignment="viewEnd"
+            android:textAppearance="@style/MyLabel"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/target_amount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.3"
+            android:background="@drawable/table_cell_plain"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Approx\nValue"
+            android:textAlignment="viewEnd"
+            android:textAppearance="@style/MyLabel"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/product_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

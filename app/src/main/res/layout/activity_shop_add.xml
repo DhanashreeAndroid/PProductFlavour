@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_shop_add"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@android:color/white"
+    tools:context="com.salescube.healthcare.demo.ShopAddActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Shop Add/Modify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/shop_add_lbl_heading"
+            android:textAlignment="center"
+            android:textStyle="normal|bold"
+            android:textSize="18sp"
+            android:textColor="@color/heading_text_color"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/border_gray"
+            android:padding="5dp"
+            android:textAllCaps="true" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:text="Shop Name:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView2"
+                    android:textAppearance="@style/MyLabel"
+                    android:background="@drawable/border_label" />
+
+                <EditText
+                    android:id="@+id/shop_add_txt_shop_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_text_box_gray"
+                    android:ems="10"
+                    android:fontFamily="sans-serif-condensed"
+                    android:inputType="textPersonName|textImeMultiLine|textCapWords"
+                    android:maxLength="200"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:text="Regitsration No."
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView23"
+                    android:textAppearance="@style/MyLabel"
+                    android:background="@drawable/border_label" />
+
+                <EditText
+                    android:id="@+id/shop_add_txt_reg_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_text_box_gray"
+                    android:ems="10"
+                    android:inputType="textCapWords|textCapSentences|textMultiLine"
+                    android:maxLength="50" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:text="GST NO."
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView31"
+                    android:textAppearance="@style/MyLabel"
+                    android:background="@drawable/border_label" />
+
+                <EditText
+                    android:id="@+id/shop_add_txt_gst_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_text_box_gray"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:maxLength="15" />
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:text="Owner Name:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView30"
+                    android:textAppearance="@style/MyLabel"
+                    android:background="@drawable/border_label" />
+
+                <EditText
+                    android:id="@+id/shop_add_txt_owner_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_text_box_gray"
+                    android:ems="10"
+                    android:inputType="textPersonName|textCapWords"
+                    android:maxLength="200" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:text="Contact No.:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView36"
+                    android:textAppearance="@style/MyLabel"
+                    android:background="@drawable/border_label" />
+
+                <EditText
+                    android:id="@+id/shop_add_txt_contact_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_text_box_gray"
+                    android:ems="10"
+                    android:inputType="phone"
+                    android:maxLength="10" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:text="Shop Type:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView35"
+                    android:textAppearance="@style/MyLabel"
+                    android:background="@drawable/border_label" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/shop_add_spn_shop_type"
+                    android:background="@drawable/spinner_simple"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:text="Shop Status:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView37"
+                    android:background="@drawable/border_label"
+                    android:textAppearance="@style/MyLabel" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/shop_add_spn_shop_status"
+                    android:background="@drawable/spinner_simple"
+                    android:layout_weight="1" />
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:text="Shop Rank:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView39"
+                    android:background="@drawable/border_label"
+                    android:textAppearance="@style/MyLabel" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/shop_add_spn_shop_rank"
+                    android:background="@drawable/spinner_simple"
+                    android:layout_weight="1"
+                    android:spinnerMode="dropdown"/>
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:text="SMS Alert:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView34"
+                    android:textAppearance="@style/MyLabel"
+                    android:background="@drawable/border_label" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/shop_add_chk_sms_alert"
+                    android:layout_weight="1" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border_label"
+                    android:text="Location :"
+                    android:textAppearance="@style/MyLabel" />
+
+                <TextView
+                    android:id="@+id/shop_add_txt_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_text_box_gray"
+                    android:ems="10"
+                    android:maxLength="50" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border_label"
+                    android:gravity="fill_vertical"
+                    android:lines="3"
+                    android:maxLines="3"
+                    android:minLines="3"
+                    android:text="Address:"
+                    android:textAppearance="@style/MyLabel" />
+
+                <TextView
+                    android:id="@+id/my_place_txt_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_text_box_gray"
+                    android:ems="10"
+                    android:maxLines="3"
+                    android:minLines="3"
+                    android:textAppearance="@style/MyLabel" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:text="Replace With:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/shop_add_lbl_replace_shop"
+                    android:background="@drawable/border_label"
+                    android:textAppearance="@style/MyLabel" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/shop_add_spn_replace_shop"
+                    android:background="@drawable/spinner_simple"
+                    android:layout_weight="1" />
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/shop_add_btn_location"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_simple"
+                    android:text="Get Location"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/shop_add_btn_submit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_simple"
+                    android:text="Submit" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/shop_add_btn_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_simple"
+                android:text="Cancel"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

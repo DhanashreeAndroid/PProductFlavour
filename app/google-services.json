@@ -1,0 +1,135 @@
+{
+  "project_info": {
+    "project_number": "177025329470",
+    "firebase_url": "https://sarina-herbals-sales-cube.firebaseio.com",
+    "project_id": "sarina-herbals-sales-cube",
+    "storage_bucket": "sarina-herbals-sales-cube.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:177025329470:android:8edd6ffc0bc5982f",
+        "android_client_info": {
+          "package_name": "com.salescube.healthcare.demo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "177025329470-u7jppqet44e1fagm7j64ohsf0evf0ssp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.salescube.healthcare.demo",
+            "certificate_hash": "c2648772efd2e249bd06791af147da1ab65aec1f"
+          }
+        },
+        {
+          "client_id": "177025329470-98u9h0felitmrmna120p3cs5mj1fte82.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoyLSzfMgq5Axf16tGx4ed2TGerjYmh2E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "177025329470-98u9h0felitmrmna120p3cs5mj1fte82.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:177025329470:android:41db38922ed865e5af246f",
+        "android_client_info": {
+          "package_name": "com.salescube.healthcare.kawre"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "177025329470-98u9h0felitmrmna120p3cs5mj1fte82.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoyLSzfMgq5Axf16tGx4ed2TGerjYmh2E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "177025329470-98u9h0felitmrmna120p3cs5mj1fte82.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:177025329470:android:4816e487289bff2daf246f",
+        "android_client_info": {
+          "package_name": "com.salescube.healthcare.kprafood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "177025329470-98u9h0felitmrmna120p3cs5mj1fte82.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoyLSzfMgq5Axf16tGx4ed2TGerjYmh2E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "177025329470-98u9h0felitmrmna120p3cs5mj1fte82.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:177025329470:android:4b4ccfe90cce30b2af246f",
+        "android_client_info": {
+          "package_name": "com.salescube.healthcare.maharashtratea"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "177025329470-98u9h0felitmrmna120p3cs5mj1fte82.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoyLSzfMgq5Axf16tGx4ed2TGerjYmh2E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "177025329470-98u9h0felitmrmna120p3cs5mj1fte82.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

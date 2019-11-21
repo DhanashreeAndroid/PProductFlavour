@@ -1,0 +1,56 @@
+> 10OCT2016
+> Today Works
+    1) Download Price List
+    2) Download Focus Product & Todays Target
+
+
+HTTP Error 500.19 - Internal Server Error
+The requested page cannot be accessed because the related configuration data for the page is invalid.
+Error Code	   0x8007000d
+
+Set at top level after <configuration>
+<configSections>
+
+ERROR > java.lang.NullPointerException: Attempt to invoke virtual method 'int android.view.View.getImportantForAccessibility()' on a null object reference
+Solution 1 > Check table row column is in correct order designer & view
+
+
+final Dialog dialog = new Dialog(HomeActivity.this);
+dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+dialog.setContentView(R.layout.dialog_report_confirmation);
+dialog.setCancelable(false);
+dialog.setTitle("Confirmation!");
+
+LinearLayout layout = (LinearLayout)dialog.findViewById(R.id.dialog_layout);
+
+Button btn = new Button(dialog.getContext());
+btn.setText("New Entry");
+btn.setLayoutParams(new ViewGroup.LayoutParams(-1, -2));
+btn.setMaxLines(1);
+btn.setElevation(1f);
+btn.setOnClickListener(new Button.OnClickListener(){
+    @Override
+    public void onClick(View v) {
+        Intent intent = new Intent(HomeActivity.this, OtherWorkActivity.class);
+        startActivity(intent);
+        dialog.dismiss();
+    }
+});
+layout.addView(btn);
+
+btn = new Button(dialog.getContext());
+btn.setText("Other Work Report");
+btn.setLayoutParams(new ViewGroup.LayoutParams(-1, -2));
+btn.setMaxLines(1);
+btn.setElevation(1f);
+btn.setOnClickListener(new Button.OnClickListener(){
+    @Override
+    public void onClick(View v) {
+        Intent intent = new Intent(HomeActivity.this, OtherWorkReportActivity.class);
+        startActivity(intent);
+        dialog.dismiss();
+    }
+});
+layout.addView(btn);
+
+dialog.show();

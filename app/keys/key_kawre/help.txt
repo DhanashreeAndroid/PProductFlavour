@@ -1,0 +1,11 @@
+Key Store Path: D:\Projects\LIVE-PROJECTS\MaharashtraTea\android\kawre\key\kawre1211.jks
+key store pass : jZ3b5nPrF8
+alias: key0
+key pass====  7uG0drDxVM
+
+First and Last Name : Pitambari DigitalCare
+Organizational Unit : Pitambari DigitalCare
+Organization 	    : Pitambari Products Pvt Ltd.
+City or Locality    : Thane
+State or Province   : Maharashtra
+COnutry Code(XX)    : IN

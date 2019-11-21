@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginTop="16dp"
+    android:orientation="vertical"
+    tools:context="com.salescube.healthcare.demo.MyPlaceActivity">
+
+   <!-- <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/border_gray"
+        android:padding="5dp"
+        android:text="My Place"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/heading_text_color"
+        android:textSize="18sp"
+        android:textStyle="normal|bold" />-->
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/border_label"
+                android:gravity="fill_vertical"
+                android:text="Place Type:"
+                android:textAppearance="@style/MyLabel" />
+
+            <Spinner
+                android:id="@+id/my_place_spn_type"
+                style="@android:style/Widget.Holo.Light.Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/spinner_simple" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/my_place_row_place"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/my_place_lbl_place"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/border_label"
+                android:gravity="fill_vertical"
+                android:text="Place:"
+                android:textAppearance="@style/MyLabel" />
+
+            <Spinner
+                android:id="@+id/my_place_spn_place_id"
+                style="@android:style/Widget.Holo.Light.Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/spinner_simple" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/border_label"
+                android:gravity="fill_vertical"
+                android:text="Lattitude:"
+                android:textAppearance="@style/MyLabel" />
+
+            <TextView
+                android:id="@+id/my_place_txt_lat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/border_text_box_gray"
+                android:ems="10"
+                android:textAppearance="@style/MyLabel" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/border_label"
+                android:gravity="fill_vertical"
+                android:text="Longitude:"
+                android:textAppearance="@style/MyLabel" />
+
+            <TextView
+                android:id="@+id/my_place_txt_lng"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/border_text_box_gray"
+                android:ems="10"
+                android:textAppearance="@style/MyLabel" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/border_label"
+                android:gravity="fill_vertical"
+                android:lines="3"
+                android:maxLines="3"
+                android:minLines="3"
+                android:text="Address:"
+                android:textAppearance="@style/MyLabel" />
+
+            <TextView
+                android:id="@+id/my_place_txt_add"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/border_text_box_gray"
+                android:ems="10"
+                android:maxLines="3"
+                android:minLines="3"
+                android:textAppearance="@style/MyLabel" />
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/my_place_btn_re_capture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_simple"
+            android:text="Re-Capture" />
+
+        <Button
+            android:id="@+id/my_place_btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_simple"
+            android:text="Submit" />
+    </LinearLayout>
+</LinearLayout>

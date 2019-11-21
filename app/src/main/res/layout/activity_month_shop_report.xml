@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:paddingLeft="8dp"
+    android:paddingTop="8dp"
+    android:paddingRight="8dp"
+    tools:context=".MonthShopWiseAchievementActivity">
+
+    <TableLayout
+        android:id="@+id/month_shop_tbl_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="2dp">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:background="@drawable/border_label"
+                android:gravity="center_vertical"
+                android:text="From Date :"
+                android:textAppearance="@style/MyLabel" />
+
+            <TextView
+                android:id="@+id/month_shop_tv_from_date"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_marginRight="4dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/border_text_box_gray"
+                android:clickable="true"
+                android:drawableRight="@drawable/ic_date_range"
+                android:paddingRight="4dp"
+                android:textAppearance="@style/MyLabel" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="2dp">
+
+            <TextView
+                android:id="@+id/textView41"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border_label"
+                android:text="To Date :"
+                android:textAppearance="@style/MyLabel" />
+
+            <TextView
+                android:id="@+id/month_shop_tv_to_date"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="4dp"
+                android:layout_weight="3"
+                android:background="@drawable/border_text_box_gray"
+                android:drawableRight="@drawable/ic_date_range"
+                android:drawablePadding="16dp"
+                android:paddingRight="4dp"
+                android:textAppearance="@style/MyLabel" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/month_shop_btn_report"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/month_shop_tbl_date"
+        android:background="@drawable/button_simple"
+        android:clickable="true"
+        android:text="View Report" />
+
+    <TableLayout
+        android:id="@+id/month_shop_tbl_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/month_shop_btn_report"
+        android:layout_marginTop="2dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="4dp"></TableLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/month_shop_rcv_lst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/month_shop_tbl_total"
+        android:layout_below="@+id/month_shop_tbl_header"
+        android:paddingLeft="2dp"
+        android:paddingRight="4dp"></android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/month_shop_tbl_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/table_row_header"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="2"
+            android:background="@drawable/table_cell_bg"
+            android:gravity="center_horizontal"
+            android:text="Total :"
+            android:textColor="@color/colorVeryDarkBlue"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/month_shop_tv_total"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="@drawable/table_cell_plain"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorVeryDarkBlue"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>

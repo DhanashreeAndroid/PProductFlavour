@@ -1,0 +1,11 @@
+Key Store Path: D:\Projects\demo-fmcg-app\salescube healthcare\android\key\key0807.jks
+key store pass : 8w)AMbZQ)2xGN[/$
+alias: key0
+key pass====  JuS78r7f6kSq\Bzj
+
+First and Last Name : Pitambari DigitalCare
+Organizational Unit : Pitambari DigitalCare
+Organization 	    : Pitambari Products Pvt Ltd.
+City or Locality    : Thane
+State or Province   : Maharashtra
+COnutry Code(XX)    : IN

@@ -1,0 +1,9 @@
+<resources>
+    <string name="application_name">SalesCube\nNyasa Foods</string>
+    <string name="acra_app_name">SalesCube Nyasa Foods</string>
+    <string name="acra_toast_text">Sorry, the application crashed. A report will be sent to the developers.</string>
+    <string name="acra_dialog_text">The application has stopped unexpectedly. Please try again.</string>
+    <string name="notification_text">Crash</string>
+    <string name="notification_channel">com.pitambari.smartsales.app</string>
+    <string name="empty_text"></string>
+</resources>

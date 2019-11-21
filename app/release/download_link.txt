@@ -1,0 +1,3 @@
+release.pitambaridigitalcare.com/phondaghat/SalesCube-Phondaghat-release-1.0.apk
+
+release.pitambaridigitalcare.com/folderName/file_name

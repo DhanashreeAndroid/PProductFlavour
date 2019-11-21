@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.salescube.healthcare.demo.SalesOrderEntryActivity">
+
+    <TableLayout
+        android:id="@+id/orderEntry_tbl_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TableLayout>
+
+    <ScrollView
+        android:id="@+id/orderEntry_srl_orderScroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:fillViewport="true">
+
+        <TableLayout
+            android:id="@+id/newOrder_tbl_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:shrinkColumns="*"
+            android:stretchColumns="*"
+            android:weightSum="1">
+
+        </TableLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/border_top"
+        android:orientation="horizontal"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp">
+
+        <Button
+            android:id="@+id/orderEntry_btn_addProduct"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:background="@drawable/border_text_box_gray"
+            android:drawableLeft="@drawable/icon_add"
+            android:maxHeight="45dp"
+            android:minHeight="40dp"
+            android:text="Add New" />
+
+        <Button
+            android:id="@+id/orderEntry_btn_submit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:background="@drawable/border_text_box_gray"
+            android:drawableLeft="@drawable/icon_done"
+            android:maxHeight="45dp"
+            android:minHeight="40dp"
+            android:text="Submit" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:text="Total Amount:"
+            android:textAlignment="textEnd"
+            android:textAppearance="@style/MyLabel" />
+
+        <TextView
+            android:id="@+id/orderEntry_tv_total"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:background="@drawable/border_text_box_gray"
+            android:gravity="center_vertical"
+            android:text="0.00"
+            android:textAlignment="textEnd"
+            android:textAppearance="@style/MyLabel"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

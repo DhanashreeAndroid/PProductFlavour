@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="4dp">
+ <!--   <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:layout_margin="4dp">
+-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_green"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/shop_wise_txt_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1.4"
+                android:text="DATE: xx"
+                android:textColor="@color/colorBlueee"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/shop_wise_txt_tc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginRight="2dp"
+                android:layout_weight="0.6"
+                android:text="TC: xx"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/shop_wise_txt_pc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="0.6"
+                android:text="PC: x"
+                android:textColor="@color/colorBlueee"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <TableLayout
+            android:id="@+id/shop_wise_tbl_head"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"></TableLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:scrollbars="vertical"
+            android:fillViewport="true">
+
+            <TableLayout
+                android:id="@+id/shop_wise_tbl_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"></TableLayout>
+        </ScrollView>
+        <TableLayout
+            android:id="@+id/shop_wise_tbl_total"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"
+            android:orientation="vertical"></TableLayout>
+    <!--</LinearLayout>-->
+</LinearLayout>

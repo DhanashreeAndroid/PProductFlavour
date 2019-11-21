@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#df8577</color>-->
+    <!--<color name="colorPrimaryDark">#eadddb</color>-->
+    <color name="colorPrimary">#00bcd4</color>
+    <color name="colorPrimaryDark">#00b2cc</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="btnColor">#0f253f</color>
+    <color name="heading_text_color">#0000ee</color>
+    <color name="heading_back_color">#58868483</color>
+    <color name="title_background_color">#0f253f</color>
+    <color name="colorRed">#ac0c1c</color>
+    <color name="colorGreen">#6e8f04</color>
+    <color name="colorYellow">#fafa00</color>
+    <color name="colorBlueee">#00004c</color>
+    <color name="colorBlue">#0000ee</color>
+    <color name="colorGray">#434343</color>
+    <color name="colorVeryDarkBlue">#001a33</color>
+    <color name="colorWhite">#ffffff</color>
+
+
+    <color name="grey2">#de868483</color>
+
+    <color name="blue1">#CCCCFF</color>
+    <color name="blue2">#6666FF</color>
+
+    <color name="tableRow1BackColor">#ffffff</color>
+    <color name="tableRow1TextColor">#000000</color>
+    <color name="tableRow2BackColor">#F0DCDB</color>
+    <color name="tableRow2TextColor">#000000</color>
+    <color name="home_title_back_color">#283e4a</color>
+
+    <color name="holo_blue_dark">#ff0099cc</color>
+    <color name="holo_orange_light">#ffffbb33</color>
+    <color name="home_bg">#ecd9d9d9</color>
+    <color name="colorNavyBlue">#0f253f</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+    <color name="button_color">#3262a5</color>
+
+    <color name="month_year_picker_color">#30a949</color>
+    <color name="all_selection_color">#b6d8f2</color>
+    <color name="tour_plan_back">#E2EEEEEE</color>
+    <color name="tour_plan_spinner_stroke">#41ECEFF1</color>
+    <color name="tour_plan_spinner">#eceff1</color>
+
+    <color name="disabled_state">#F2FAF9F9</color>
+    <color name="transparent_bg">@android:color/transparent</color>
+
+    <color name="tour_plan_text">#3262a5</color>
+
+
+    <color name="success_stroke_color">#A5DC86</color>
+    <color name="sweet_dialog_bg_color">#FFFFFF</color>
+    <color name="sweet_dialog_bg_color_dark">#e6222222</color>
+    <color name="text_color">#575757</color>
+    <color name="title_color">#575757</color>
+    <color name="title_color_dark">#fff</color>
+    <color name="trans_success_stroke_color">#33A5DC86</color>
+    <color name="warning_stroke_color">#F8BB86</color>
+
+    <color name="error_stroke_color">#F27474</color>
+    <color name="button_text_color">#FFFFFF</color>
+    <color name="blue_btn_bg_pressed_color">#96BFD2</color>
+
+    <color name="main_green_color">#6bd505</color>
+
+    <color name="gray_btn_bg_color">#D0D0D0</color>
+    <color name="gray_btn_bg_pressed_color">#B6B6B6</color>
+    <color name="float_transparent">#00000000</color>
+
+    <color name="red_btn_bg_color">#DD6B55</color>
+    <color name="red_btn_bg_pressed_color">#CD5B55</color>
+
+    <color name="ASM">#fff</color>
+
+    <color name="achivement" >#6666FF</color>
+    <color name="deepSkyBlue">#33a1c9</color>
+    <color name="target">#ADACAC</color>
+
+    <color name="red">#ff0000</color>
+</resources>

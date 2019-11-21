@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context=".SOProductWiseAchievement">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="2dp">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:background="@drawable/border_label"
+                android:gravity="center_vertical"
+                android:text="SO Name :"
+                android:textAppearance="@style/MyLabel" />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/daily_sales_so_spn"
+                android:layout_column="1"
+                android:layout_weight="1"
+                style="@android:style/Widget.Holo.Light.Spinner"
+                android:spinnerMode="dropdown"
+                android:background="@drawable/spinner_simple" />
+        </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:id="@+id/daily_sales_tbl_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </TableLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/daily_sales_prod_rcv_lst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

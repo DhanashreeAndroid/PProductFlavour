@@ -1,0 +1,267 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    flavorDimensions "1"
+    configurations {
+        all*.exclude group: 'com.google.guava', module: 'listenablefuture'
+    }
+
+    signingConfigs {
+        //demo
+        demoDebug {
+        }
+        demoRelease {
+            keyAlias 'key0'
+            keyPassword '@KWTZT](u76H7'
+            storeFile file('D:/Dhanashree/Projects/FMCGProductFlavour/android/app/keys/key_demo/key2806.jks')
+            storePassword 'DTcwjSN8#D&cuN'
+        }
+        //----------------------------------------------------------------------------------------------------
+        //frolic foods
+        frolicfoodsDebug {
+
+        }
+        frolicfoodsRelease {
+            keyAlias 'key0'
+            keyPassword 'j36ZgKqxMfUZcJbk'
+            storeFile file('D:/Projects/LIVE-PROJECTS/MaharashtraTea/android/floricfoods/key/key1706.jks')
+            storePassword 'nrQ4GnUzU3rVL7CZ'
+        }
+
+        //----------------------------------------------------------------------------------------------------
+        //kawre
+        kawreDebug {
+        }
+        kawreRelease {
+            keyAlias 'key0'
+            keyPassword '7uG0drDxVM'
+            storeFile file('D:/Dhanashree/Projects/FMCGProductFlavour/android/app/keys/key_kawre/kawre1211.jks')
+            storePassword 'jZ3b5nPrF8'
+        }
+        //----------------------------------------------------------------------------------------------------
+        //kprafoods
+        kprafoodDebug {
+        }
+        kprafoodRelease {
+            keyAlias 'key0'
+            keyPassword 'NoA;8a5&KgkKeoIq'
+            storeFile file('D:/Dhanashree/Projects/FMCGProductFlavour/android/app/keys/key_kprafoods/key3005.jks')
+            storePassword 'VR(WCB0OPBqMBko'
+        }
+        //----------------------------------------------------------------------------------------------------
+       //maharashtratea
+        maharashtrateaDebug {
+        }
+        maharashtrateaRelease {
+            keyAlias 'key0'
+            keyPassword 'JuS78r7f6kSq\\Bzj'
+            storeFile file('D:/Dhanashree/Projects/FMCGProductFlavour/android/app/keys/key_maharashtratea/key0807.jks')
+            storePassword '8w)AMbZQ)2xGN[/$'
+        }
+
+        //----------------------------------------------------------------------------------------------------
+        //nyasa foods
+        nyasafoodsDebug {
+
+        }
+        nyasafoodsRelease {
+            keyAlias 'key0'
+            keyPassword 'dzwpSWySqV3wJBeR'
+            storeFile file('D:/Dhanashree/Projects/FMCGProductFlavour/android/app/keys/key_nyasafoods/key2405.jks')
+            storePassword 'nSFrGRhhe5SRWEbB'
+        }
+
+        //----------------------------------------------------------------------------------------------------
+        //phondaghat
+        phondaghatDebug {
+
+        }
+        phondaghatRelease {
+            keyAlias 'key0'
+            keyPassword 'Z6UQqpn3Jx%HT;pZ'
+            storeFile file('D:/Dhanashree/Projects/FMCGProductFlavour/android/app/keys/key_phondaghat/key1806.jks')
+            storePassword '7YaUVpx!3w#qu:kW'
+        }
+
+        //----------------------------------------------------------------------------------------------------
+        //royal bee honey
+        royalbeehoneyDebug {
+
+        }
+        royalbeehoneyRelease {
+            keyAlias 'key0'
+            keyPassword 'WMSp4nqEH39m9sWz'
+            storeFile file('D:/Dhanashree/Projects/FMCGProductFlavour/android/app/keys/key_royalbeehoney/key0606.jks')
+            storePassword 'Yb8MJ6LGbJ7ptc7b'
+        }
+
+        //----------------------------------------------------------------------------------------------------
+        //shara foods
+        sharafoodsDebug {
+
+        }
+        sharafoodsRelease {
+            keyAlias 'key0'
+            keyPassword 'aL5KzuH2szXN4hX9 '
+            storeFile file('D:/Dhanashree/Projects/FMCGProductFlavour/android/app/keys/key_sharafoods/SharaKeystore.jks')
+            storePassword 'skG4z9FBV2eCP83M '
+        }
+
+    }
+//----------------------------------------------------------------------------------------------------
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 28
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+//----------------------------------------------------------------------------------------------------
+    productFlavors {
+        demo {
+            applicationId "com.salescube.healthcare.demo"
+            versionCode 1
+            versionName "1.0"
+        }
+
+        frolicfoods{
+            applicationId "com.salescube.healthcare.floricfoods"
+            versionCode 5
+            versionName "1.5"
+        }
+
+        kawre {
+            applicationId "com.salescube.healthcare.kawre"
+            versionCode 1
+            versionName "1.0"
+        }
+
+        kprafood {
+            applicationId 'com.salescube.healthcare.kprafood'
+            versionCode 19
+            versionName "2.7"
+        }
+
+        maharashtratea {
+            applicationId "com.salescube.healthcare.maharashtratea"
+            versionCode 15
+            versionName "2.4"
+        }
+
+        nyasafoods{
+            applicationId "com.salescube.healthcare.nyasafoods"
+            versionCode 16
+            versionName "2.8"
+        }
+
+        phondaghat{
+            applicationId "com.salescube.healthcare.phondaghat"
+            versionCode 13
+            versionName "2.3"
+        }
+
+        royalbeehoney{
+            applicationId 'com.salescube.healthcare.royalbeehoney'
+            versionCode 13
+            versionName "2.3"
+        }
+
+        sharafoods{
+            applicationId 'com.salescube.healthcare.sharafoods'
+            versionCode 11
+            versionName "2.1"
+        }
+    }
+//----------------------------------------------------------------------------------------------------
+    buildTypes {
+
+        debug {
+            shrinkResources false
+            minifyEnabled false
+            // proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        release {
+            shrinkResources true
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            productFlavors.demo.signingConfig signingConfigs.demoRelease
+            productFlavors.frolicfoods.signingConfig signingConfigs.frolicfoodsRelease
+            productFlavors.kawre.signingConfig signingConfigs.kawreRelease
+            productFlavors.kprafood.signingConfig signingConfigs.kprafoodRelease
+            productFlavors.maharashtratea.signingConfig signingConfigs.maharashtrateaRelease
+            productFlavors.nyasafoods.signingConfig signingConfigs.nyasafoodsRelease
+            productFlavors.phondaghat.signingConfig signingConfigs.phondaghatRelease
+            productFlavors.royalbeehoney.signingConfig signingConfigs.royalbeehoneyRelease
+            productFlavors.sharafoods.signingConfig signingConfigs.sharafoodsRelease
+
+            applicationVariants.all {
+                def flavorName = it.getFlavorName()
+                def buildTypeName = it.buildType.name
+                def buildVariantName = flavorName + buildTypeName.capitalize()
+                def currentSigningConfig = signingConfigs.getByName(buildVariantName)
+
+                it.mergedFlavor.signingConfig = currentSigningConfig
+
+                it.outputs.all { output ->
+                    outputFileName = "SalesCube-${flavorName}-${"release"}-${it.versionName}.apk"
+                }
+
+                // If you want to sign debug build
+                //buildTypes.debug.signingConfig currentSigningConfig
+            }
+
+            /*applicationVariants.all { variant ->
+                variant.outputs.all { output ->
+                    outputFileName = "SalesCube-Kawre-${variant.name}-${variant.versionName}.apk"
+                }
+            }*/
+        }
+
+    }
+//----------------------------------------------------------------------------------------------------
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+}
+//----------------------------------------------------------------------------------------------------
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.android.support:cardview-v7:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.4.1'
+    implementation 'com.google.code.gson:gson:2.7'
+    implementation 'com.google.guava:guava:19.0'
+    //implementation 'com.google.android.gms:play-services:6.5.87'
+    implementation 'com.google.android.gms:play-services-location:6.5.87'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'pub.devrel:easypermissions:1.2.0'
+    implementation 'com.toptoche.searchablespinner:searchablespinnerlibrary:1.3.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    // for work manager
+    implementation 'android.arch.work:work-runtime:1.0.1'
+    //    for Perfomance module - Pie chart graph
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.12.1'
+    implementation 'com.google.firebase:firebase-messaging:17.3.2'
+    implementation 'com.itextpdf:itextg:5.5.10'
+    // implementation 'com.android.support:multidex:1.0.3'
+    //for forceful update
+    implementation 'org.jsoup:jsoup:1.11.3'
+    implementation project(':searchableSpinner')
+    //for crash reporting
+    def acraVersion = '5.4.0'
+    implementation "ch.acra:acra-http:$acraVersion"
+    implementation "ch.acra:acra-toast:$acraVersion"
+    implementation "ch.acra:acra-dialog:$acraVersion"
+    implementation 'com.orhanobut:logger:1.15'
+}
+
+apply plugin: 'com.google.gms.google-services'

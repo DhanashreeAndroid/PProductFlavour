@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/month_year_picker_width"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/picker_container"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/txt_selection"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:text="Jan,2017"
+        android:gravity="center"
+        android:textSize="@dimen/picker_month_text_size"
+        android:textColor="@color/white"
+        android:background="@color/month_year_picker_color"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/btn_previous"
+            android:layout_width="?android:attr/actionBarSize"
+            android:layout_height="?android:attr/actionBarSize"
+            android:text="@string/previous"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/txt_year"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="2017"
+            android:gravity="center"
+            android:textSize="@dimen/picker_month_text_size"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/btn_previous"
+            android:layout_toLeftOf="@+id/btn_next"/>
+        <TextView
+            android:id="@+id/btn_next"
+            android:layout_width="?android:attr/actionBarSize"
+            android:layout_height="?android:attr/actionBarSize"
+            android:text="@string/next"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/picker_month_height"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_jan"
+                android:layout_width="@dimen/picker_month_height"
+                android:layout_height="match_parent"
+                android:text="@string/jan"
+                android:gravity="center"
+                android:textSize="@dimen/picker_month_text_size"
+                android:textColor="@color/black"
+                android:tag="1"
+                android:layout_marginRight="5dp"/>
+
+            <TextView
+                android:id="@+id/txt_feb"
+                android:layout_width="@dimen/picker_month_height"
+                android:layout_height="match_parent"
+                android:text="@string/feb"
+                android:gravity="center"
+                android:textSize="@dimen/picker_month_text_size"
+                android:textColor="@color/black"
+                android:tag="2"
+                android:layout_marginRight="5dp"/>
+
+            <TextView
+                android:id="@+id/txt_mar"
+                android:layout_width="@dimen/picker_month_height"
+                android:layout_height="match_parent"
+                android:text="@string/mar"
+                android:gravity="center"
+                android:textSize="@dimen/picker_month_text_size"
+                android:textColor="@color/black"
+                android:tag="3"
+                android:layout_marginRight="5dp"/>
+
+            <TextView
+                android:id="@+id/txt_apr"
+                android:layout_width="@dimen/picker_month_height"
+                android:layout_height="match_parent"
+                android:text="@string/apr"
+                android:gravity="center"
+                android:textSize="@dimen/picker_month_text_size"
+                android:textColor="@color/black"
+                android:tag="4"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/picker_month_height"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_may"
+                android:layout_width="@dimen/picker_month_height"
+                android:layout_height="match_parent"
+                android:text="@string/may"
+                android:gravity="center"
+                android:textSize="@dimen/picker_month_text_size"
+                android:textColor="@color/black"
+                android:tag="5"
+                android:layout_marginRight="5dp"/>
+
+            <TextView
+                android:id="@+id/txt_jun"
+                android:layout_width="@dimen/picker_month_height"
+                android:layout_height="match_parent"
+                android:text="@string/jun"
+                android:gravity="center"
+                android:textSize="@dimen/picker_month_text_size"
+                android:textColor="@color/black"
+                android:tag="6"
+                android:layout_marginRight="5dp"/>
+
+            <TextView
+                android:id="@+id/txt_jul"
+                android:layout_width="@dimen/picker_month_height"
+                android:layout_height="match_parent"
+                android:text="@string/jul"
+                android:gravity="center"
+                android:textSize="@dimen/picker_month_text_size"
+                android:textColor="@color/black"
+                android:tag="7"
+                android:layout_marginRight="5dp"/>
+
+            <TextView
+                android:id="@+id/txt_aug"
+                android:layout_width="@dimen/picker_month_height"
+                android:layout_height="match_parent"
+                android:text="@string/aug"
+                android:gravity="center"
+                android:textSize="@dimen/picker_month_text_size"
+                android:textColor="@color/black"
+                android:tag="8"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/picker_month_height"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_sep"
+                android:layout_width="@dimen/picker_month_height"
+                android:layout_height="match_parent"
+                android:text="@string/sep"
+                android:gravity="center"
+                android:textSize="@dimen/picker_month_text_size"
+                android:textColor="@color/black"
+                android:tag="9"
+                android:layout_marginRight="5dp"/>
+
+            <TextView
+                android:id="@+id/txt_oct"
+                android:layout_width="@dimen/picker_month_height"
+                android:layout_height="match_parent"
+                android:text="@string/oct"
+                android:gravity="center"
+                android:textSize="@dimen/picker_month_text_size"
+                android:textColor="@color/black"
+                android:tag="10"
+                android:layout_marginRight="5dp"/>
+
+            <TextView
+                android:id="@+id/txt_nov"
+                android:layout_width="@dimen/picker_month_height"
+                android:layout_height="match_parent"
+                android:text="@string/nov"
+                android:gravity="center"
+                android:textSize="@dimen/picker_month_text_size"
+                android:textColor="@color/black"
+                android:tag="11"
+                android:layout_marginRight="5dp"/>
+
+            <TextView
+                android:id="@+id/txt_dec"
+                android:layout_width="@dimen/picker_month_height"
+                android:layout_height="match_parent"
+                android:text="@string/dec"
+                android:gravity="center"
+                android:textSize="@dimen/picker_month_text_size"
+                android:textColor="@color/black"
+                android:tag="12"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:layout_gravity="right"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="@dimen/reply_ok_button_width"
+            android:layout_height="35dp"
+            android:text="@string/cancel"
+            android:textColor="@color/month_year_picker_color"
+            android:textSize="@dimen/picker_month_text_size"
+            android:layout_marginRight="10dp"
+            android:background="@color/transparent_bg"/>
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="@dimen/reply_ok_button_width"
+            android:layout_height="35dp"
+            android:text="@string/ok"
+            android:textColor="@color/month_year_picker_color"
+            android:textSize="@dimen/picker_month_text_size"
+            android:background="@color/transparent_bg"/>
+
+    </LinearLayout>
+
+</LinearLayout>

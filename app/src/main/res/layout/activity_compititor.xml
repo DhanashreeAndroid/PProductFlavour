@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_compititor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.salescube.healthcare.demo.CompititorActivity"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+    <!--<TextView-->
+        <!--android:text="Competitor Info."-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/textView33"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:textAppearance="@style/ActivityHeader"-->
+        <!--android:textAlignment="center"-->
+        <!--android:padding="5dp"-->
+        <!--android:background="@drawable/border_gray"-->
+        <!--android:textColor="@color/heading_text_color" />-->
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:text="Product:"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/textView28"
+                android:textAppearance="@style/MyLabel"
+                android:gravity="fill_vertical"
+                android:background="@drawable/border_label" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/comp_spn_product"
+                android:layout_weight="1"
+                android:spinnerMode="dialog"
+                android:background="@drawable/spinner_simple" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:text="Product Name:"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/textView5"
+                android:textAppearance="@style/MyLabel"
+                android:gravity="fill_vertical"
+                android:background="@drawable/border_label" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:id="@+id/comp_edit_comp_product"
+                android:layout_weight="1"
+                android:background="@drawable/border_text_box_gray"
+                android:textAllCaps="false"
+                android:inputType="textCapWords" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:text="Grams:"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/textView29"
+                android:textAppearance="@style/MyLabel"
+                android:gravity="fill_vertical"
+                android:background="@drawable/border_label" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:id="@+id/comp_edit_gms"
+                android:layout_weight="1"
+                android:inputType="text"
+                android:background="@drawable/border_text_box_gray" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:text="Retailer Net \nRate: "
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/com"
+                android:textAppearance="@style/MyLabel"
+                android:gravity="fill_vertical"
+                android:background="@drawable/border_label" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:id="@+id/comp_edit_retailer_rate"
+                android:layout_weight="1"
+                android:background="@drawable/border_text_box_gray"
+                android:inputType="numberDecimal" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:text="Competitor \nScheme:"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/textView31"
+                android:textAppearance="@style/MyLabel"
+                android:gravity="fill_vertical"
+                android:background="@drawable/border_label" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:id="@+id/comp_edit_scheme"
+                android:layout_weight="1"
+                android:inputType="text"
+                android:background="@drawable/border_text_box_gray" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:text="Stock:"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/textView38"
+                android:textAppearance="@style/MyLabel"
+                android:background="@drawable/border_label" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:inputType="numberSigned"
+                android:ems="10"
+                android:id="@+id/comp_edit_stock"
+                android:background="@drawable/border_text_box_gray"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:text="MRP:"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/textView32"
+                android:textAppearance="@style/MyLabel"
+                android:gravity="fill_vertical"
+                android:background="@drawable/border_label" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:inputType="numberSigned"
+                android:ems="10"
+                android:id="@+id/comp_edit_mrp"
+                android:layout_weight="1"
+                android:background="@drawable/border_text_box_gray" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:text="Take Photo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/comp_btn_take_photo"
+                android:layout_weight="1"
+                android:background="@drawable/button_simple" />
+
+            <Button
+                android:text="Submit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/comp_btn_submit"
+                android:layout_weight="1"
+                android:background="@drawable/button_simple" />
+
+            <Button
+                android:text="Cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/comp_btn_cancel"
+                android:layout_weight="1"
+                android:background="@drawable/button_simple" />
+        </TableRow>
+
+    </TableLayout>
+
+            <Button
+                android:id="@+id/comp_btn_report"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_simple"
+                android:text="Competitor Report" />
+
+            <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/comp_img_product"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitStart"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:minHeight="200dp"
+    android:layout_gravity="center"
+    android:id="@+id/list_container">
+
+    <TextView
+        android:id="@+id/tvLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/colorGray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <FrameLayout
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_search_black">
+        </FrameLayout>
+
+        <android.support.v7.widget.SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:queryHint="Search"
+            android:paddingLeft="-16dp"
+            android:paddingStart="-16dp"
+            app:iconifiedByDefault="false"
+            app:searchIcon="@null"
+            app:theme="@style/AppSearchView"
+            android:layout_marginLeft="5dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:background="@drawable/bg_bottom_border">
+        </android.support.v7.widget.SearchView>
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp">
+    </android.support.v7.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:text="CLOSE"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorAccent"
+        android:background="@color/transparent_bg"
+        android:gravity="right|center_vertical"
+        android:textSize="18dp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_gravity="right"/>
+</LinearLayout>

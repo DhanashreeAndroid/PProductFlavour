@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/home_bg"
+    android:orientation="vertical"
+    tools:context=".NewMainActivity">
+
+
+    <include
+        layout="@layout/layout_dashboard"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginBottom="1dp"/>
+
+    <LinearLayout
+        android:id="@+id/new_menu_list1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:paddingLeft="4dp"
+        android:paddingTop="2dp"
+        android:paddingRight="4dp"
+        android:paddingBottom="2dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/new_menu_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+        <!--<TextView
+            android:id="@+id/tv_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:layout_gravity="center"/>-->
+
+        <!-- <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v4.view.ViewPager>-->
+
+
+        <!-- <LinearLayout
+            style="android:attr/buttonBarStyle "
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/ll_sales_order"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:paddingLeft="8dp"
+                android:privateImeOptions="8dp"
+                android:gravity="center"
+                android:drawableTop="@drawable/new_sales_order"
+                android:background="@color/colorWhite"
+                android:text="Sales\nOrder"
+                android:textColor="@color/colorBlueee" />
+
+            <Button
+                android:id="@+id/ll_modify_order"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:paddingTop="20dp"
+                android:drawableTop="@drawable/icon_sales_order"
+                android:background="@color/colorWhite"
+                android:text="Modify\nOrder"
+                android:textColor="@color/colorBlueee" />
+
+            <Button
+                android:id="@+id/ll_other_work"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:paddingTop="20dp"
+                android:drawableTop="@drawable/new_other_work"
+                android:background="@color/colorWhite"
+                android:text="Other\nWork"
+                android:textColor="@color/colorBlueee" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="android:attr/buttonBarStyle "
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/ll_leave"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:paddingTop="20dp"
+                android:drawableTop="@drawable/new_leave"
+                android:background="@color/colorWhite"
+                android:text="leave"
+                android:textColor="@color/colorBlueee" />
+
+            <Button
+                android:id="@+id/ll_my_place"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:paddingTop="20dp"
+                android:drawableTop="@drawable/new_location"
+                android:background="@color/colorWhite"
+                android:text="SS\tAgent\nPlace"
+                android:textColor="@color/colorBlueee" />
+
+            <Button
+                android:id="@+id/ll_complaints"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:paddingTop="20dp"
+                android:drawableTop="@drawable/icon_complaint_box"
+                android:background="@color/colorWhite"
+                android:text="Complaints"
+                android:textColor="@color/colorBlueee" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="android:attr/buttonBarStyle "
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/ll_my_performance"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:paddingTop="20dp"
+                android:drawableTop="@drawable/icon_screen_graph"
+                android:background="@color/colorWhite"
+                android:text="My\nPerformance"
+                android:textColor="@color/colorBlueee" />
+
+            <Button
+                android:id="@+id/ll_my_report"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:paddingTop="20dp"
+                android:drawableTop="@drawable/new_report"
+                android:background="@color/colorWhite"
+                android:text="My\nReport"
+                android:textColor="@color/colorBlueee" />
+
+            <Button
+                android:id="@+id/ll_my_team_report"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="2dp"
+                android:paddingTop="20dp"
+                android:drawableTop="@drawable/new_report"
+                android:background="@color/colorWhite"
+                android:text="My Team\nReport"
+                android:textColor="@color/colorBlueee" />
+
+        </LinearLayout>-->
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/home_lbl_note"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:background="@drawable/border_gray"
+        android:fontFamily="sans-serif-condensed"
+        android:maxLines="3"
+        android:minLines="3"
+        android:padding="8dp"
+        android:scrollbars="vertical"
+        android:text="Note: "
+        android:textColor="@color/colorBlue"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+</LinearLayout>
